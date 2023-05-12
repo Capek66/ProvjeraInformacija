@@ -1,0 +1,502 @@
+/*ALL*/
+*{
+    font-family: Helvetica;
+}
+
+body{
+    margin: 0px;
+    background-color: #F0F0F0;
+    color: #1f1f1f;
+}
+
+a{
+    color: #1f1f1f;
+    text-decoration: none;
+}
+/*HEADER*/
+
+header{
+    position: sticky;
+    top: 0px;
+    padding: 5px 15px;
+    text-align: left;
+    height: 50px;
+    background-color: #FFF;
+    border-bottom: 5px solid #002B59;
+    z-index: 1;
+}
+
+header h1{
+    margin: 0px;
+    position: absolute;
+    float: left;
+    bottom: 5px;
+}
+
+/*NAV*/
+
+nav{
+    position: absolute;
+    height: 60px;
+    width: 70%;
+    top: 0;
+    right: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    height: 100%;
+    width: 150px;;
+    text-align: center;
+    line-height: 60px;
+}
+
+nav ul li img{
+    position: relative;
+    top: 3px;
+}
+
+nav ul li:hover{
+    color: #FFF;
+    background-color: #002B59;
+}
+
+nav ul li.menu:hover{
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+nav ul li.aktivan{
+    color: white;
+    background-color: #002B59;
+}
+
+nav .izbornik{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #FFF;
+    width: 30%;
+    height: auto;
+    border-bottom: 5px solid #002B59;
+    padding: 0;
+    top: 65px;
+}
+
+nav .izbornik ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-align: left;  
+}
+
+nav .izbornik ul li{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    height: 25%;
+    width: 100%;
+    text-align: left;
+    text-indent: 10px;
+}
+
+/*SECTION*/
+
+section{
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 15px;
+}
+
+/*Registracija*/
+
+.forma{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+
+.formaRec{
+    width: 50%;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px lightgrey;
+}
+
+.formaRec textarea{
+    background-color: #F0F0F0;
+}
+
+.formaRec input{
+    background-color: #F0F0F0;
+}
+
+.forma > h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.forma select{
+    width: 40%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-bottom: 3px solid #002B59;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    background-color: #FFF;
+}
+
+section form{
+    margin: 20px 0px;
+    line-height: 22px;
+}
+
+section form input{
+    width: 40%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-bottom: 3px solid #002B59;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    background-color: #FFF;
+}
+
+.forma input {
+    width: 40%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-bottom: 3px solid #002B59;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    background-color: #FFF;
+}
+
+section form input[type=checkbox]{
+    width: auto;
+}
+section form input[type=submit]{
+    border-radius: 0;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #002B59;
+    border: 0;
+}
+
+section form input[type=submit]:hover{
+    background-color: #003B7D;
+    border: 1px solid #002B59;
+}
+
+section form input[type=submit]:active{
+    background-color: #002752;
+    border: 1px solid #002B59;
+}
+
+section form select{
+    width: 40%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-bottom: 3px solid #002B59;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    background-color: #FFF;
+}
+
+section form textarea{
+    width: 40%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-bottom: 3px solid #002B59;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    background-color: #FFF;
+}
+
+.recaptcha{
+    display: inline-block;
+}
+
+#provjera{
+    color: red;
+}
+
+section form input[type=radio]{
+    width: auto;
+}
+
+#zabLoz{
+    text-decoration: underline;
+    color: blue;
+}
+
+#zabLoz:hover{
+    cursor: pointer;
+}
+
+hr{
+    border-color: #002B59;
+}
+
+#uvjeti{
+    background-color: #FFF;
+    z-index: 2;
+    position: absolute;
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px lightgrey;
+    padding: 10px;
+}
+
+.gumb{
+    margin: 5px;
+    border-radius: 0;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #002B59;
+    border: 1px solid #002B59;
+}
+
+.gumb:hover{
+    background-color: #003B7D;
+    border: 1px solid #002B59;
+    cursor: pointer;
+}
+
+.gumb:active{
+    background-color: #002752;
+    border: 1px solid #002B59;
+    cursor: pointer;
+}
+
+#galerija_vijesti, #mojeVijesti_galerija, #vijestRecenziranja{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px lightgrey;
+    padding: 10px 10px;
+    width: 70%;
+}
+
+#galerija_vijesti h3, #mojeVijesti_galerija h3{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#naslov_vijesti{
+    text-align: center;
+}
+
+#slika_vijesti{
+    text-align: center;
+}
+
+#clanak_vijesti p{
+    margin: 10px;
+}
+
+#galerija_vijesti hr, #mojeVijesti_galerija hr{
+    border: 1px solid #002B59;
+    opacity: 100%;
+    box-shadow: 0px 0px 5px lightgrey;
+}
+
+#info_vijesti{
+    line-height: 25px;
+}
+
+#lijevo, #mojeVijesti_lijevo{
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    left: -25px;
+    transform: translate(-50%, -50%);
+}
+
+#desno, #mojeVijesti_desno{
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    right: -68px;
+    transform: translate(-50%, -50%);
+}
+
+#lijevo,#desno,#mojeVijesti_lijevo,#mojeVijesti_desno:hover{
+    cursor: pointer;
+}
+
+#napomena{
+    margin: 5px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+#medij{
+    text-align: center;
+}
+
+#medij audio{
+    width: 100%;
+}
+
+#tablicaBlokKategorije, #stat, #h3Centar{
+    text-align: center;   
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #AAAAAA;
+    height: auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td{
+    border: 1px solid #AAAAAA;
+}
+
+table > caption{
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+th, td{
+    vertical-align: central;
+    height: 50px;
+    padding: 5px;
+}
+
+thead{
+    border-bottom: 3px solid #002B59;
+}
+
+tfoot{
+    border-top: 3px solid #002B59;
+}
+
+tr:nth-child(even){
+    background-color: #EBEBEB;
+}
+
+.natrag{
+    color: #002B59;
+    text-decoration: underline;
+    font-style: italic;
+    position: absolute;
+}
+
+#kategorijeTablica td:nth-child(1){
+    cursor: pointer;
+}
+
+#izborModeratora{
+    width: 200px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-bottom: 3px solid #002B59;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    background-color: #FFF;
+    margin-right: 10px;
+}
+
+#oAutoru{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#oAutoru ul{
+    list-style: none; 
+}
+
+#oAutoru li{
+    margin: 10px;
+    line-height: 22px;
+}
+
+#dokumentacija{
+    text-align: left;
+}
+
+#dokumentacija p{
+    line-height: 1.5;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #FFF;
+    border-top: 5px solid #002B59;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footerText{
+    display: inline-block;
+}
+
+.footerA{
+    margin: 10px;
+}
+
+.footerP{
+    font-weight: bold;
+    margin: 10px;
+}
